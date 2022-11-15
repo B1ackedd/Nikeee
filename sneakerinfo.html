@@ -1,0 +1,45 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="sneakerinfo.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Modak&display=swap" rel="stylesheet">
+    <title>About</title>
+</head>
+<body>
+    <div class="sneakers">
+        <h1>NIKE LOGO</h1>
+        <center>
+            <img src="nikelogo.png" id="nieklogo1" width="1200" height="800"> <br>
+            <h2>NIKE лого-г SWOOSH гэж нэрлэдэг.</h2> <br>
+            <h1 style="background-color:azure;color:black ;border:1px solid; border-width:5px; width:400px;">NIKE INTRODUCTION</h1>
+            <video controls autoplay width="1200" height="800">
+                <source src="cortez.mp4" type="video/mp4">
+                <source src="cortez.ogg" type="video/ogg">
+            </video> <br>
+            <h1>ADIDAS LOGO</h1>
+            <img src="adidaslogo.jpg" alt="" id="adidaslogo1" width="1200" height="800"> <br>
+            <h2>ADIDAS logo нь 3 Strip буюу 3 судлаар нь хүмүүс мэддэг болсон.</h2>
+            <h1>ADIDAS INTRODUCTION</h1>
+            <video width="1200" height="800" controls autoplay>
+                <source src="adidasvid.mp4" type="video/mp4">
+            </video> <br>
+            <h1>JORDAN LOGO</h1>
+            <img src="jordanlogo.jpg" alt="" id="jordanlogo1" width="1200" height="800"> <br>
+            <h2>Хүн бүрийн өмсөх дуртай пүүз бол мэдээж JORDAN :))</h2>
+            <h1>JORDAN INTRODUCTION</h1>
+            <video width="1200" height="800" controls>
+                <source src="jordanvid.mp4" type="video/mp4">
+            </video>
+        </center>
+    </div>
+    <button class="sectionPrevious" id="coverPrevious" onclick="goBack()">&laquo;Previous</button>
+        <script>
+            function goBack() {
+                window.history.back();
+            }
+        </script>
+</body>
+</html>

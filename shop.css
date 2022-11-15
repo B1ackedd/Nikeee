@@ -1,0 +1,57 @@
+﻿* {
+    box-sizing: border-box;
+}
+.shopping {
+    background-size: cover;
+    background: url(fashionkilla.jpg);
+    width:100%;
+    background-repeat:no-repeat;
+}
+#storeIcon{
+    width:50px;
+    height:50px;
+    border-radius:100%;
+    left:100%;
+    float:right;
+}
+
+.container {
+    position: sticky;
+    width: 50%;
+    max-width: 300px;
+    margin:1px;
+}
+
+img{
+    display: block;
+    width: 50% auto;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    background: rgb(0, 0, 0);
+    color: #f1f1f1;
+    width: 100%;
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size:20px;
+}
+
+.container:hover .overlay {
+    opacity: 1;
+}
+.sectionPrevious {
+    position:unset;
+    color: black;
+    text-align: left;
+    font-size: 20px;
+    font-style: italic;
+}
+
+#coverPrevious {
+    background-image: url(coverPrevious.jpg);
+    width: 100%;
+    height: 50px;
+}

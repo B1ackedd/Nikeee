@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="register.css" />
+    <title>REGISTER</title>
+</head>
+<body>
+    <h1>HANABI</h1> 
+    <div class="facePage">
+        <h2>No account? Create one here</h2>
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <button type="button" class="toggle-btn" onclick="login()">Log In</button>
+                <button type="button" class="toggle-btn" onclick="signup()">Sign Up</button>
+            </div>
+            <div class="social-icons">
+                <img src="fb.png" />
+                <img src="gp.png" />
+                <img src="tw.png" />
+            </div>
+            <form id="login" class="input-group">
+                <input type="email" class="input-field" placeholder="Email" required />
+                <input type="password" class="input-field" placeholder="Enter Password" required />
+                <input type="checkbox" class="check-box" /><span>Remember Password</span>
+                <button type="submit" class="sumbit-btn">Log In</button>
+            </form>
+            <form id="signup" class="input-group">
+                <h5>Social title</h5>
+                <input type="radio" name="social title" class="check-box" /><small>Mr.</small>
+                <input type="radio" name="social title" class="check-box" /><small>Ms.</small>
+                <input type="radio" name="social title" class="check-box" /><small>Miss</small><br />
+                <input type="text" class="input-field" placeholder="Enter first name" required />
+                <input type="text" class="input-field" placeholder="Enter last name" required />
+                <input type="email" class="input-field" placeholder="Enter email" required />
+                <input type="password" class="input-field" placeholder="Enter Password" required />
+                <br /><input type="date" /><br />
+                <input type="checkbox" class="check-box" /><span>I agree to the terms & conditions</span>
+                <button type="submit" class="sumbit-btn">Sign Up</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        var x = document.getElementById("login");
+        var y = document.getElementById("signup");
+        var z = document.getElementById("btn");
+
+        function signup() {
+            x.style.left = "-400px";
+            y.style.left = "50px";
+            z.style.left = "110px";
+        }
+        function login() {
+            x.style.left = "50px";
+            y.style.left = "450px";
+            z.style.left = "0";
+        }
+    </script>
+
+</body>
+</html>
